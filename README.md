@@ -73,6 +73,15 @@ docker build -t tokishorbankar/k8s-demo-app:v1.0 .
 docker push tokishorbankar/k8s-demo-app:v1.0
 ```
 
+#### Test Apps
+
+```
+minikube ip
+
+curl http://<minikube_ip>:30100
+
+```
+
 
 #### Links
 * [mongodb image on Docker Hub](https://hub.docker.com/_/mongo)

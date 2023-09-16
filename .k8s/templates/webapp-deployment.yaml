@@ -5,7 +5,7 @@ metadata:
   labels:
     app: webapp
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: webapp
@@ -24,14 +24,14 @@ spec:
           valueFrom:
             secretKeyRef:
               name: mongo-secret
-              key: USER_NAME
+              key: mongo-user
         - name: USER_PWD
           valueFrom:
             secretKeyRef:
               name: mongo-secret
-              key: USER_PWD
+              key: mongo-password 
         - name: DB_URL
           valueFrom:
             configMapKeyRef:
               name: mongo-config
-              key: MONGO_URL
+              key: mongo-url
