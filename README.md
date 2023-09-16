@@ -13,7 +13,11 @@
 
 ##### start Minikube and check status
 ```
-minikube start --driver docker 
+minikube start --driver qemu --network socket_vmnet
+```
+* OR
+```
+minikube start
 minikube status
 ```
 
@@ -55,6 +59,11 @@ kubectl logs {pod-name}
 minikube stop
 ```
 
+##### delete all in Minikube cluster
+```
+minikube delete --all
+```
+
 <br />
 
 > :warning: **Known issue - Minikube IP not accessible** 
@@ -87,5 +96,6 @@ curl http://<minikube_ip>:30100
 * [mongodb image on Docker Hub](https://hub.docker.com/_/mongo)
 * [K8s manifest files](https://github.com/tokishorbankar/k8s-demo-app/tree/main/.k8s/templates)
 * [webapp image on Docker Hub](https://hub.docker.com/repository/docker/tokishorbankar/k8s-demo-app)
+* [webapp code](https://github.com/tokishorbankar/k8s-demo-app)
 * [k8s official documentation](https://kubernetes.io/docs/home/)
 * [Kubectl Plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/kubectl)
