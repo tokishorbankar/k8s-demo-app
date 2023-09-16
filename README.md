@@ -76,7 +76,7 @@ docker push tokishorbankar/k8s-demo-app:v1.0
 
 #### Links
 * [mongodb image on Docker Hub](https://hub.docker.com/_/mongo)
-* [K8s manifest files](https://hub.docker.com/repository/docker/tokishorbankar/k8s-demo-app/.k8s/templates)
+* [K8s manifest files](https://github.com/tokishorbankar/k8s-demo-app/tree/main/.k8s/templates)
 * [webapp image on Docker Hub](https://hub.docker.com/repository/docker/tokishorbankar/k8s-demo-app)
 * [k8s official documentation](https://kubernetes.io/docs/home/)
 * [Kubectl Plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/kubectl)
